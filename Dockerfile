@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -qy python-pip python-dev && pip install d
 
 COPY dogstatsd.py /root/
 
-ENTRYPOINT ./dogstatsd.py
+ENTRYPOINT /root/dogstatsd.py
